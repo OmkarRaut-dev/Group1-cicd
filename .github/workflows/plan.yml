@@ -2,6 +2,7 @@ name: Blue Green deploy - Terraform plan for SUB-Branches
 on:
   push:
     branches:
+      - "!main"
       - "*"
 jobs:
   terraform-deploy:
