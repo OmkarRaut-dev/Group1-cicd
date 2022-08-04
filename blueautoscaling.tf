@@ -1,6 +1,6 @@
 data "aws_ami" "ubuntu" {
   most_recent = true
-  owners = ["398649119307"]
+  owners = ["222394667866"]
 
    filter {
     name   = "virtualization-type"
@@ -29,7 +29,7 @@ resource "aws_autoscaling_group" "bar" {
   desired_capacity          = 1
   force_delete              = true
   launch_configuration      = aws_launch_configuration.as_conf.name
-  vpc_zone_identifier       = ["subnet-035d7231521e34dbd"]
+  vpc_zone_identifier       = ["subnet-0d1580daa1df1ae09"]
   #availability_zones        = "eu-west-1a"
     tag {
     key                 = "name"

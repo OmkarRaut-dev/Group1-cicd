@@ -1,7 +1,7 @@
 
 data "aws_ami" "ubuntu1" {
   most_recent = true
-  owners = ["398649119307"]
+  owners = ["222394667866"]
 
    filter {
     name   = "virtualization-type"
@@ -32,7 +32,7 @@ resource "aws_autoscaling_group" "bar1" {
   desired_capacity          = 1
   force_delete              = true
   launch_configuration      = aws_launch_configuration.as_conf1.name
-  vpc_zone_identifier       = ["subnet-0adf70f0941d2ae9c"]
+  vpc_zone_identifier       = ["subnet-0c1fa16423c46bf4d"]
     tag {
     key                 = "name"
     value               = "custom green instance"
