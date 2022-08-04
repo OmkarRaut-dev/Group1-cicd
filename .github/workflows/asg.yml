@@ -2,7 +2,7 @@ name: Blue Green deploy - Terraform plan for SUB-Branches
 on:
   push:
     branches:
-      - "ASG"
+      - "ASG/**"
 jobs:
   terraform-deploy:
     runs-on: ubuntu-latest
